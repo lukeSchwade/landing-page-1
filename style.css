@@ -2,31 +2,29 @@
 /* Roboto */
 @font-face {
     font-family: "Roboto";
-    src: url(/fonts/roboto-regular.woff2);
+    src: url(./fonts/roboto-regular.woff2);
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Roboto";
-    src: url(/fonts/roboto-italic.woff2);
+    src: url(./fonts/roboto-italic.woff2);
     font-weight: normal;
     font-style: italic;
-}
+} */
 @font-face {
     font-family: "Roboto";
-    src: url(/fonts/roboto-bold.woff2);
+    src: url(./fonts/roboto-bold.woff2);
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url(/fonts/roboto-light.woff2);
+    src: url(./fonts/roboto-light.woff2);
     font-weight: 100;
     font-style: normal;
 }
-
-
 
 * {
     /* margin: 0;
@@ -35,26 +33,77 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
 
 }
 a {
     text-decoration: none;
+    color: #F9FAF8;
 }
 
 ul {
     list-style: none;
 }
 
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
 }
-.hero-secondary {
-    font-size: 18px;
+
+.signup-button {
+    outline: #F9FAF8 solid 2px;
 }
-h1 {
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-header {
     font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
 }
-.header, .footer, .hero-text {
+.hero-secondary, .header-links {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.header, .footer, .hero-text, .header-links {
     background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.gallery-header {
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+.name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-container {
+    background-color: #3882F6;
     color: #F9FAF8;
 
 }
+
