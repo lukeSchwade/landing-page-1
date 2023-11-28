@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Yoshi</title>
-    
+    <script src="scripts.js"></script>
 </head>
 <body>
+
+
+
     <div class="header-hero-container">
         <div class="header">
             <div class="logo">Yoshi</div>
@@ -35,7 +38,9 @@
         </div>
 
     </div>
-    <div class="content"> 
+
+
+    <div class="content" id="mainContent"> 
          
         <div class="yoshi-gallery">
             <h2 class="gallery-header">Yoshi.</h2>
@@ -59,7 +64,7 @@
             </div>
         </div>
 
-        <div class="quote-container">
+        <div class="quote-container" id="quote">
             <div class="quote-box">
                 <div class="quote">Lorem ipsum dolor sit amet. Sed nemo Quis et corporis officiis a tempora maxime? Non culpa nihil sit reiciendis dolor et voluptas dolorum et totam quia ut voluptas dolor?
 
@@ -84,6 +89,16 @@
 
     <div class="footer">
         Copyright © Yoshi
+        
+        <div class="night-mode-switch">
+            <label class="switch"> 
+                <input class="checkbox" type="checkbox" name="nightCheck">
+                <span class="slider round" onclick="toggleNightMode()"></span>
+              </label>
+              <p>Night Mode</p>
+             
+
+        </div>
     </div>
 
 </body>
