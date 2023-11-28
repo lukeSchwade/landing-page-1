@@ -278,7 +278,7 @@ h1 {
 .night-mode-switch {
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 15px;
 }
 .switch {
     margin: 8px;
@@ -367,6 +367,11 @@ input:checked + .slider:before {
     .contact-container,.gallery-container,.hero-text {
         margin: 40px 5%;
     
+    }
+    .night-mode-switch {
+        transform: scale(0.8);
+        top: 2%;
+        right: 2%;
     }
 
 }

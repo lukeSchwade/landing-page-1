@@ -22,7 +22,5 @@ function toggleNightMode() {
     const element = document.getElementById ("mainContent");
     const element2 = document.getElementById("quote");
     element.classList.toggle("night-mode");
-    console.log(element);
-    console.log(element2);
     element2.classList.toggle("night-mode");
 }
