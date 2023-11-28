@@ -24,3 +24,7 @@ function toggleNightMode() {
     element.classList.toggle("night-mode");
     element2.classList.toggle("night-mode");
 }
+
+function signupButton (){
+    console.log("Signup click");
+}
