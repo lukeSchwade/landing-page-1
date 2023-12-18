@@ -109,7 +109,7 @@ button::after {
 .hero-container { 
     margin-left: 10%;
     margin-right: 10%;
-    gap: 24px;
+    gap: 48px;
 }
 
 .header-links {
@@ -167,7 +167,8 @@ button::after {
 .hero-image {
     width: 400px;
     height: 300px;
-    /* outline: 3px #3882F6 solid; */
+     /* outline: 3px #3882F6 solid; */
+     filter: drop-shadow(0 5px 0.90rem #0c0f14);
 
 }
 
