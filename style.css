@@ -155,11 +155,11 @@ button::after {
     object-fit: cover;
     transition: all .3s;
 }
-
+/* gallery Hover effect */
 .gallery-image:hover {
-    -ms-transform:scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -ms-transform:scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     filter: drop-shadow(0  5px 0.5rem #6a6b6b);
     outline: 3px #c96f6c solid; 
 }
@@ -174,9 +174,9 @@ button::after {
     transition: all .3s;
 }
 .gallery-image:hover + .caption {
-    -ms-transform: translateY(3px);
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
+    -ms-transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
  }
 
 /* MARGINS */
