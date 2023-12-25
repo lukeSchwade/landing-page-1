@@ -156,17 +156,28 @@ button::after {
     transition: all .3s;
 }
 
-.gallery-item {
-    /* transition: transform .3s; */
-}
-
 .gallery-image:hover {
     -ms-transform:scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     filter: drop-shadow(0  5px 0.5rem #6a6b6b);
-    outline: 3px #7261b1 solid; 
+    outline: 3px #c96f6c solid; 
 }
+
+.gallery-image:active {
+    outline: 3px #ccc;
+    -ms-transform:scale(1.13);
+    -webkit-transform: scale (1.13);
+    transform:scale(1.13);
+}
+.caption {
+    transition: all .3s;
+}
+.gallery-image:hover + .caption {
+    -ms-transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+ }
 
 /* MARGINS */
 .yoshi-gallery, .header, .quote-container,.contact-container,.hero-background,.gallery-header {
