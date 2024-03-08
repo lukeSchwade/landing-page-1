@@ -1,2 +1,2 @@
 # landing-page-1
-This is my first landing page for the Odin Project. I am creating the html and css layout based on a provided design.
+This is my first practice landing page. I created the site based on a design, and have been adding to it as I learn new things

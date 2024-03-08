@@ -94,10 +94,8 @@ button::after {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-
 }
 .header {
-    /* padding: 8px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,12 +135,16 @@ button::after {
     /* padding: 20px; */
     /* max-width: 400px; */
 }
-
+.hero-image {
+    width: 400px;
+    height: 300px;
+     /* outline: 3px #3882F6 solid; */
+     filter: drop-shadow(0 5px 0.90rem #0c0f14);
+}
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-
 }
 
 .gallery-image {
@@ -151,26 +153,31 @@ button::after {
     outline: 3px #3882F6 solid;
     border-radius: 10px;
     object-fit: cover;
-    /* transition: transform .3s; */
+    transition: all .3s;
+}
+/* gallery Hover effect */
+.gallery-image:hover {
+    -ms-transform:scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: drop-shadow(0  5px 0.5rem #6a6b6b);
+    outline: 3px #c96f6c solid; 
 }
 
-.gallery-item {
-    transition: transform .3s;
+.gallery-image:active {
+    outline: 3px #ccc;
+    -ms-transform:scale(1.13);
+    -webkit-transform: scale (1.13);
+    transform:scale(1.13);
 }
-
-.gallery-item:hover {
-    -ms-transform:scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.caption {
+    transition: all .3s;
 }
-
-.hero-image {
-    width: 400px;
-    height: 300px;
-     /* outline: 3px #3882F6 solid; */
-     filter: drop-shadow(0 5px 0.90rem #0c0f14);
-
-}
+.gallery-image:hover + .caption {
+    -ms-transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+ }
 
 /* MARGINS */
 .yoshi-gallery, .header, .quote-container,.contact-container,.hero-background,.gallery-header {
