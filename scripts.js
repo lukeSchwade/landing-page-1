@@ -28,3 +28,9 @@ function toggleNightMode() {
 function signupButton (){
     console.log("Signup click");
 }
+
+const changeTitle = (nameChange) => {
+    const logoTitle = document.querySelector('.logo');
+    logoTitle.innerHTML = nameChange;
+
+}
