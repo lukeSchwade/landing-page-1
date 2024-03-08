@@ -34,3 +34,35 @@ const changeTitle = (nameChange) => {
     logoTitle.innerHTML = nameChange;
 
 }
+
+//Add new node and style it
+const addMessage = () => {
+    const parentNode = document.querySelector('.hero-text');
+    const button = parentNode.querySelector('.signup-button');
+    button.disabled = true;
+    const div = document.createElement('sign-up-message');
+    div.style.cssText = 'color: gray';
+    div.textContent = `That doesn't work right now.`;
+    div.setAttribute('id', 'fadeAwaySource');
+  
+    parentNode.appendChild(div);
+    addFade(button);
+}
+
+const addFade = async (button)  => {
+    await new Promise(r => setTimeout(r, 2000));
+    const el = document.getElementById("fadeAwaySource");
+    el.classList.toggle('fade');
+        el.addEventListener("transitionend", () => {
+            removeElement(el);
+            button.disabled = false;
+        });
+
+
+
+
+}
+
+const removeElement = (el) => {
+   el.remove();
+}

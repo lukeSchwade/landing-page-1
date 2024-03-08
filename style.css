@@ -356,6 +356,18 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+
+/* ANIMATIONS */
+/* assign this to an element to make it fade away */
+#fadeAwaySource {
+    opacity: 1;
+    transition: opacity 1s;
+    /* transition-delay: 2s; */
+}
+
+#fadeAwaySource.fade {
+    opacity: 0;
+}
 /* Shift margins if screen is wide enough */
 @media screen and (min-width: 1545px) {
     .header,.hero-container {
