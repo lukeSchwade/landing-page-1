@@ -17,7 +17,11 @@
 // });
 
 // ATTEMPT #2 check if checkbox element is clicked on
+const NightModeSlider = document.querySelector(".slider");
+NightModeSlider.addEventListener('click', () => {
+    toggleNightMode();
 
+})
 function toggleNightMode() {
     const element = document.getElementById ("mainContent");
     const element2 = document.getElementById("quote");
@@ -25,9 +29,6 @@ function toggleNightMode() {
     element2.classList.toggle("night-mode");
 }
 
-function signupButton (){
-    console.log("Signup click");
-}
 
 const changeTitle = (nameChange) => {
     const logoTitle = document.querySelector('.logo');
@@ -35,6 +36,26 @@ const changeTitle = (nameChange) => {
 
 }
 
+//turn top links into buttons
+const headerButtons = document.querySelectorAll(".header-link");
+
+for (const button of headerButtons) {
+    button.addEventListener("click", function (e) {
+        changeTitle(this.innerHTML);
+    
+    });
+    
+ }
+ const lastButton = document.querySelector(".last-button");
+ lastButton.addEventListener('click', function (e){
+    console.log(e.target);
+ });
+
+const signupButton = document.querySelector(".hero-text > .signup-button");
+
+signupButton.addEventListener('click', () => {
+    addMessage();
+});
 //Add new node and style it
 const addMessage = () => {
     const parentNode = document.querySelector('.hero-text');

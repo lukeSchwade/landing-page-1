@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Yoshi</title>
-    <script src="scripts.js"></script>
+    
 </head>
 <body>
     <div class="header-hero-container">
@@ -13,9 +13,9 @@
             <div class="logo">Yoshi</div>
             <ul >
                 <li class="header-links">
-                    <a href="#"onclick="changeTitle('Yoshen')">Yoshen</a>
-                    <a href="#"onclick="changeTitle('Goshen')">Goshen</a>
-                    <a href="#"onclick="changeTitle('Yoshi')">Yoshi</a>
+                    <a href="#" class="header-link">Yoshen</a>
+                    <a href="#"class="header-link">Goshen</a>
+                    <a href="#"class="header-link">Yoshi</a>
                 </li>
             </ul>
         </div>
@@ -25,7 +25,7 @@
                     <h1 class="hero-header">This Website is for a Cat.</h1>
                     <p class="hero-secondary">Welcome to Yoshi's website. Lorem 
                         ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas culpa fuga adipisc.</p> <!--It adds a massive margin if this is too short..-->
-                    <button class ="signup-button" onclick="addMessage()">Sign up</button>
+                    <button class ="signup-button">Sign up</button>
                 </div>
                 <img class="hero-image" src="./img/yoshi-4-hero.jpg" alt="Yoshi">
             </div>
@@ -74,7 +74,7 @@
                     <div class="call-title">It's time to Call Now!</div>
                     <p> Click that button right over there right now! </p>
                 </div>
-                <button class="signup-button" onclick="signupButton()">Sign up</button>
+                <button class="signup-button last-button">Sign up</button>
             </div>
         </div>
     </div>
@@ -83,11 +83,11 @@
         <div class="night-mode-switch">
             <label class="switch"> 
                 <input class="checkbox" type="checkbox" name="nightCheck">
-                <span class="slider round" onclick="toggleNightMode()"></span>
+                <span class="slider round"></span>
               </label>
               <p>Night Mode</p>
         </div>
     </div>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
